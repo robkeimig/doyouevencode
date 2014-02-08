@@ -1,18 +1,16 @@
+global:
+    secure: rsIi7zqeKvMh7G5Jxx8WdUZzp16uxoyunO3yWru/z2Cyllcr+ufTEgy+CZoOhLo9HPDE4mwr/c9Hp7zukuW7aBBrfaK5rPQ5+ZvlHZtWB6bTzJPfjCUuoXbsbh/GHu2cQYTY8WuqhugCchOwohAA3GQCgK+58pw8rZXj/LBFFqM=
 language: node_js
 node_js:
 - '0.10'
 install:
 - npm install wintersmith -g
+- gem install s3_website
 - cd blog
 - npm install
 script:
 - npm test
 - wintersmith build
-deploy:
-  provider: s3
-  access_key_id: AKIAI2E4KFUAZENR2V3Q
-  bucket: doyouevencode.com
-  skip_cleanup: true
-  local-dir: build
-  secret_access_key:
-    secure: LcbwhflqB/E6R2QIbiQFznMb8/sqwqXlhNkMVAQw+I4szHgRmJxOgOitl59ZKIPygp6K91PsXYTMbmf0XVNpYkU2yiXZZAzIXvv9g28HITPruUi5RT4dw/aYJ2/Je4xLcMU0F3ZiOJP857OEDY5b43AW4ekujRhJlUdSy7b8FLI=
+- mv build ../build
+- cd ../
+- s3_website push --site build  
