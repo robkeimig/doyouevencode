@@ -11,16 +11,10 @@ script:
 - cd build
 - ls -lrt
 deploy:
-  matrix:
-  - provider: s3
-    access_key_id: AKIAI2E4KFUAZENR2V3Q
-    bucket: doyouevencode.com
-    skip_cleanup: true
-    local-dir: build
-  - provider: s3
-    access_key_id: AKIAI2E4KFUAZENR2V3Q
-    bucket: www.doyouevencode.com
-    skip_cleanup: true
-    local-dir: build
+  provider: s3
+  access_key_id: AKIAI2E4KFUAZENR2V3Q
+  bucket: doyouevencode.com
+  skip_cleanup: true
+  local-dir: build
   secret_access_key:
     secure: LcbwhflqB/E6R2QIbiQFznMb8/sqwqXlhNkMVAQw+I4szHgRmJxOgOitl59ZKIPygp6K91PsXYTMbmf0XVNpYkU2yiXZZAzIXvv9g28HITPruUi5RT4dw/aYJ2/Je4xLcMU0F3ZiOJP857OEDY5b43AW4ekujRhJlUdSy7b8FLI=
