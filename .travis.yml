@@ -8,8 +8,6 @@ install:
 script:
 - npm test
 - wintersmith build
-- cd build
-- ls -lrt
 deploy:
   provider: s3
   access_key_id: AKIAI2E4KFUAZENR2V3Q
