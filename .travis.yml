@@ -5,3 +5,10 @@ install:
   - npm install
   - cd blog
   - npm install
+  - cd ../
+script:
+  - npm test
+  - cd blog
+  - npm test
+  - wintersmith build
+  - ls
