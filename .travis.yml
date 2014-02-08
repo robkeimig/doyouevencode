@@ -3,7 +3,8 @@ node_js:
   - "0.10"
 install:
   - npm install wintersmith -g
-  - cd blog npm install
+  - cd blog 
+  - npm install
 script:
   - npm test
   - wintersmith build
