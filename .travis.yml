@@ -2,12 +2,8 @@ language: node_js
 node_js:
   - "0.10"
 install:
-  - npm install
-  - cd blog
-  - npm install
-  - cd ../
+  - npm install wintersmith -g
 script:
-  - npm test
   - cd blog
   - npm test
   - wintersmith build
