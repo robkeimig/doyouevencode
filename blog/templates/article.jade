@@ -6,7 +6,7 @@ block append vars
 
 block prepend title
   | #{ page.title + " - "}
-
+  asdfasdfasdf
 block header
   include author
   h1= page.title
@@ -17,9 +17,28 @@ block header
 block content
   article.article
     section.content!= typogr(page.html).typogrify()
-
+  div(style="margin-bottom: 2.5em")
+    div(align="center")
+      script(async,src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
+      <!-- responsive footer -->
+      ins(
+       class="adsbygoogle",
+       style="display:block",
+       data-ad-client="ca-pub-4069781503703337",
+       data-ad-slot="4717918886",
+       data-ad-format="auto")
+      script.
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  div(id="disqus_thread")
+    script.
+      var disqus_shortname = 'doyouevencode';
+      var disqus_developer = 1;
+      (function(){
+        var dsq = document.createElement('script');
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
 block prepend footer
   div.nav
     a(href=contents.index.url) « Full blog
-
-

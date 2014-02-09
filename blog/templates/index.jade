@@ -14,7 +14,6 @@ block content
         if article.hasMore
           p.more
             a(href=article.url) more
-
 block prepend footer
   div.nav
     if prevPage
@@ -23,6 +22,18 @@ block prepend footer
       a(href='/archive.html') « Archives
     if nextPage
       a(href=nextPage.url) Next page »
+  div(style="margin-bottom: 2.5em")
+    div(align="center")
+      script(async,src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
+      <!-- responsive footer -->
+      ins(
+       class="adsbygoogle",
+       style="display:block",
+       data-ad-client="ca-pub-4069781503703337",
+       data-ad-slot="4717918886",
+       data-ad-format="auto")
+      script.
+       (adsbygoogle = window.adsbygoogle || []).push({});
 
 
 
