@@ -5,7 +5,7 @@ node_js:
 - '0.10'
 install:
 - npm install wintersmith -g
-- gem install s3_website -v
+- gem install s3_website
 - cd blog
 - npm install
 script:
