@@ -15,5 +15,5 @@ script:
 - wintersmith build
 - mv build ../build
 - cd ../
-- s3_website --headless push --site build 
+- s3_website push --site build --headless
 
