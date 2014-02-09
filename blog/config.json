@@ -2,7 +2,7 @@
   "locals": {
     "url": "http://doyouevencode.com",
     "name": "Do You Even Code?",
-    "owner": "Rob",
+    "owner": "rob",
     "description": "Seriously, bro."
   },
   "plugins": [
