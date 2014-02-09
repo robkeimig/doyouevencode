@@ -1,12 +1,14 @@
 doctype html
 block vars
   - var bodyclass = null;
-html(lang='en')
+  html(lang='en')
   head
     block head
       meta(charset='utf-8')
       meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
       meta(name='viewport', content='width=device-width')
+      script(src='/js/ga.js')
+      script(async,src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
       title
         block title
           = locals.name
@@ -24,13 +26,28 @@ html(lang='en')
     div#content
       div.content-wrap
         block content
-          h2 Welcome to zombocom!
+          h2
     footer
       div.content-wrap
         block footer
+          script.
+            <!--
+            google_ad_client = "ca-pub-4069781503703337";
+            /* footer */
+            google_ad_slot = "5555523680";
+            google_ad_width = 728;
+            google_ad_height = 90;
+            //-->
+          script(src="//pagead2.googlesyndication.com/pagead/show_ads.js")
           section.about
             !=contents['about.md'].html
           section.copy
             p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
-              a(href='https://github.com/jnordberg/wintersmith') Wintersmith
-              //- please leave the "powered by" if you use the design
+              a(href='https://github.com/jnordberg/wintersmith', target='_blank') Wintersmith
+            p 
+              a(href='https://github.com/bob1029/doyouevencode', target='_blank') Site source code (Github)
+            p
+              a(href='https://travis-ci.org/bob1029/doyouevencode', target='_blank') Site build system (Travis-CI)
+
+        
+              
