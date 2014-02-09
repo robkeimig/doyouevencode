@@ -1,5 +1,3 @@
-s3_id: AKIAI2E4KFUAZENR2V3Q
-s3_secret: <%= ENV['AWS_KEY'] %>
 s3_bucket: doyouevencode.com
 
 # Below are examples of all the available configurations.

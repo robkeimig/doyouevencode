@@ -1,5 +1,7 @@
-global:
-    secure: rsIi7zqeKvMh7G5Jxx8WdUZzp16uxoyunO3yWru/z2Cyllcr+ufTEgy+CZoOhLo9HPDE4mwr/c9Hp7zukuW7aBBrfaK5rPQ5+ZvlHZtWB6bTzJPfjCUuoXbsbh/GHu2cQYTY8WuqhugCchOwohAA3GQCgK+58pw8rZXj/LBFFqM=
+env:
+  global:
+  - secure: aspN3Wz2i0NBWQsgSfi1P6PmYRKFX4HW2p9C+N/BkKoFFiwlv9n5fdDW5OniEgyUAgclxU3PHgn1XEhBaQOkt/yHcFXsov36HGWA5PRZmJZRpc9hzRCb46HlpJBtmWgt3toPxHDueNlJJQWJmhlBSrLvCtb2TwnkvYCA0n097r8=
+  - secure: rjeDiMJhOW33mSrEt4gkOshvc1OjXduP1BqdUUdFrrUUssM7xDeDtwnfjiroCNvFB50qQv2RNKRWef6UqGHSAgKmCib7qmNmJfH6CrcBUI/5o78+oOtfmouBG4AC+umH0mIlkRB/ZGjI4hC07P6PWQ2mn0iHFZe9kEuSH5jexYI=
 language: node_js
 node_js:
 - '0.10'
@@ -13,4 +15,5 @@ script:
 - wintersmith build
 - mv build ../build
 - cd ../
-- s3_website push --site build  
+- s3_website push --site build
+
