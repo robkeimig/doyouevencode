@@ -30,24 +30,24 @@ block vars
     footer
       div.content-wrap
         block footer
-          script.
-            <!--
-            google_ad_client = "ca-pub-4069781503703337";
-            /* footer */
-            google_ad_slot = "5555523680";
-            google_ad_width = 728;
-            google_ad_height = 90;
-            //-->
-          script(src="//pagead2.googlesyndication.com/pagead/show_ads.js")
+          div(align="center")
+            script.
+              <!--
+              google_ad_client = "ca-pub-4069781503703337";
+              /* footer */
+              google_ad_slot = "5555523680";
+              google_ad_width = 728;
+              google_ad_height = 90;
+              //-->
+            script(src="//pagead2.googlesyndication.com/pagead/show_ads.js")
           section.about
             !=contents['about.md'].html
           section.copy
-            p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
-              a(href='https://github.com/jnordberg/wintersmith', target='_blank') Wintersmith
             p 
               a(href='https://github.com/bob1029/doyouevencode', target='_blank') Site source code (Github)
-            p
+              &nbsp;
               a(href='https://travis-ci.org/bob1029/doyouevencode', target='_blank') Site build system (Travis-CI)
-
+            p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
+              a(href='https://github.com/jnordberg/wintersmith', target='_blank') Wintersmith
         
               
