@@ -147,6 +147,7 @@ footer .nav a {
 
 footer .about {
   border-top: 1px dashed #d2d2d2;
+  margin: 2.2em 0em 0em 0em;
   padding: 2.2em 3em;
   font-size: 0.7em;
   -webkit-column-count: 2;
