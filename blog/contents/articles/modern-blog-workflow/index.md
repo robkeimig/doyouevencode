@@ -29,7 +29,7 @@ The other major issue is how to modify the site on the go. Obviously I could car
 
 ##The Workflow
 
-[to be continued]
+[to be continued...]
 
 
 
