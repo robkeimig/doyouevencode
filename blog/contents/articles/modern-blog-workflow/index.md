@@ -27,13 +27,21 @@ By using the 3rd party service Disqus, I am able to have comments for each artic
 
 The other major issue is how to modify the site on the go. Obviously I could carry my laptop with me and have the full development and build stack ready at all times. This is not an option. I will now describe the workflow used for modifying the site by utilizing cloud-based services exclusively.
 
-##The Workflow
+##The Components and Workflow
 
-[to be continued...]
+In order to achieve the same effect of browser-only blogging, I needed to combine several technologies. My blog has the following components:
 
+> **doyouevencode.com Blog Components:**
+> - [Github]:https://github.com
+> - [Wintersmith]:http://wintersmith.io
+> - [Amazon S3]:http://aws.amazon.com/s3/
+> - [Amazon Route 53]:http://aws.amazon.com/route53/
+> - [Dillinger]:http://dillinger.io
+> - [Travis-CI]:http://travis-ci.org
+> - [Cloud9]:http://c9.io
+> - Any domain registrar
 
-
-
+[Workflow here]
 
 
 
