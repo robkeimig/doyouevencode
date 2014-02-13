@@ -27,22 +27,33 @@ By using the 3rd party service Disqus, I am able to have comments for each artic
 
 The other major issue is how to modify the site on the go. Obviously I could carry my laptop with me and have the full development and build stack ready at all times. This is not an option. I will now describe the workflow used for modifying the site by utilizing cloud-based services exclusively.
 
-##The Components and Workflow
+##Brief Overview of the Components and Workflow
 
-In order to achieve the same effect of browser-only blogging, I needed to combine several technologies. My blog has the following components:
+**Note that all source/configuration for this blog is available at my Github repository [here](https://github.com/bob1029/doyouevencode).**
 
-> **doyouevencode.com Blog Components:**
-> - [Github]:https://github.com
-> - [Wintersmith]:http://wintersmith.io
-> - [Amazon S3]:http://aws.amazon.com/s3/
-> - [Amazon Route 53]:http://aws.amazon.com/route53/
-> - [Dillinger]:http://dillinger.io
-> - [Travis-CI]:http://travis-ci.org
-> - [Cloud9]:http://c9.io
-> - Any domain registrar
+In order to achieve the same browser-only blogging as Wordpress I needed to combine several technologies. My blog has the following components:
 
-[Workflow here]
+> - [Github](https://github.com) - Source code repository. Contains everything needed to build the site.
+> - [Wintersmith](http://wintersmith.io) - The amazing static blog generator.
+> - [Amazon S3](http://aws.amazon.com/s3/) - Hosting of the generated static blog.
+> - [Amazon Route 53](http://aws.amazon.com/route53/) - DNS for the website. Routes to S3 bucket containing site files.
+> - [Dillinger](http://dillinger.io) - [Optional] Web-based markdown editor. Can integrate with Github.
+> - [Travis-CI](http://travis-ci.org) - Automated build and deploy of site on pushes to Github repository.
+> - [Cloud9](http://c9.io) - [Optional] Allows for editing any site files w/ a Git shell from a browser.
+> - Any domain registrar - Godaddy/Dreamhost/etc...
 
+The following simple workflow is used for creating a new article:
 
+> 1. Login to Cloud9 or local workstation and access the local repository containing the blog's source.
+> 1. Perform a **git pull** to refresn your working directory if needed.
+> 1. Create a new folder under **blog/contents/articles/[article name]**.
+> 1. Create a new index.md file in new folder in step 2.
+> 1. Edit index.md in Dillinger or other preferred editor.
+> 1. Add any static article content (images, css, js, etc) to folder in step 2.
+> 1. Test site by running **wintersmith preview** at blog root.
+> 1. Commit to local repository: **git commit -a**.
+> 1. Push to origin repository: **git push**.
+> 1. Watch as Travis-CI magically deploys the blog to Amazon S3. 
 
+[Insert YouTube video here demonstrating above concepts :D]
 
