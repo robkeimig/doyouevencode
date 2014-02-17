@@ -16,5 +16,6 @@ I will begin by chronicling the construction of this blog and then work into the
 ```javascript
 function(){
 	//prepare for awesomeness in the coming days/weeks!
+	//!!!
 }
 ```
