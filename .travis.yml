@@ -1,3 +1,6 @@
+branches:
+  only:
+    - master
 env:
   global:
   - secure: aspN3Wz2i0NBWQsgSfi1P6PmYRKFX4HW2p9C+N/BkKoFFiwlv9n5fdDW5OniEgyUAgclxU3PHgn1XEhBaQOkt/yHcFXsov36HGWA5PRZmJZRpc9hzRCb46HlpJBtmWgt3toPxHDueNlJJQWJmhlBSrLvCtb2TwnkvYCA0n097r8=
