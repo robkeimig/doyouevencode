@@ -37,6 +37,11 @@ pre {
   border-radius: 0.25em;
   margin-bottom: 1.8em;
   padding: 1em;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
 
 h1 {
