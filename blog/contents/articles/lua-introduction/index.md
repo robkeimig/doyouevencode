@@ -5,23 +5,27 @@ date: 2013-03-18
 template: article.jade
 ---
 
-Parts of this article series:
-
-> - [Lua - An Introduction](#) (this article)
-> - [Lua - Basic Embedding with C++](#) (Planned - Under development)
-> - [Lua - Basic Embedding with .NET](#) (Planned - Under development)
-
-***
 ###What is Lua?
 
 Lua is a scripting language with an official implementation (pure ANSI C) which can be embedded and used across many platforms.
 It was created over 2 decades ago and has grown to become what is arguably one of the most popular scripting languages aside from the monster that is Javascript.
+
+<span class="more"></span>
 
 Lua is everywhere. Many software products such as Redis, Apache HTTP Server and Wireshark use it to allow for other developers to quickly extend their functionality.
 If you have ever played World of Warcraft or League of Legends, you have used a product that leverages the speed and flexibility of Lua.
 
 It was designed with extensible semantics in mind. This allows for developers to create a [domain specific language](http://en.wikipedia.org/wiki/Domain-specific_language) particular to their project.
 This means that if a developer desires to add classes and object-oriented functionality, he could simply implement it using some of Lua's features <a href="http://en.wikipedia.org/wiki/Lua_(programming_language)#Object-oriented_programming">Example - Wikipedia</a>.
+
+##Parts of this article series:
+
+***
+> - [Lua - An Introduction](#) (this article)
+> - [Lua - Basic Embedding with C++](#) (Planned - Under development)
+> - [Lua - Basic Embedding with .NET](#) (Planned - Under development)
+
+***
 
 ###Some command line examples
 
