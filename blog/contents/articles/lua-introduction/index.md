@@ -5,9 +5,6 @@ date: 2013-03-18
 template: article.jade
 ---
 
-***
-##Note: This is the first part in a multi-part series on using Lua in a variety of situations. 
-
 Parts of this article series:
 
 > - [Lua - An Introduction](#) (this article)
